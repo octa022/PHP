@@ -1,39 +1,43 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: octavio
- * Date: 13/08/17
- * Time: 03:19 PM
- */
 echo '<h1>Constantes</h1><br>';
-// const
-echo '<h2>CONS</h2><br>';
+// Definición de constantes usando el la palabra reservada const
+echo '<h2>Utilizando const</h2><br>';
+// Se declara una constante en Mayúscula, para distinguir de las variables
+// const NOMBRECONSTANTE = 'ValorConstante'
 const CONSTANTE='Es una Constante';
-// No se Puede Redefinir una Constante
-
+// No se Puede Redefinir una Constante o eliminar una vez se hayan definido
 const NUMERO='1';
+
+//Constante de tipo array
 const COLORES=array('Amarillo','Azul','Rojo');
 
-echo CONSTANTE;
-echo NUMERO;
-echo COLORES[0];
-echo COLORES[1];
-echo COLORES[2];
+echo CONSTANTE.'<br>';
+echo NUMERO.'<br>';
+echo COLORES[0].'<br>';
+echo COLORES[1].'<br>';
+echo COLORES[2].'<br>';
 
-echo '<br>';
-//define
-echo '<h2>DEFINE</h2><br>';
-
+//Definición de constantes define())
+echo '<h2>Utilizando define</h2><br>';
+// define('nombreConstante','valorCOnstante') 
 define('CONSTANTE2','Prueba Constante 2');
-echo CONSTANTE2;
+echo CONSTANTE2.'<br>';
 
+//Tipo array en define
+//define('nombreConstante',array('valor1','valor2','valorN'))
 define('COLORES2',array('Negro','Blanco','Gris'));
-echo COLORES2[0];
-echo COLORES2[1];
-echo COLORES2[2];
 
-echo '<br>';
+echo COLORES2[0].'<br>';
+echo COLORES2[1].'<br>';
+echo COLORES2[2].'<br>';
 
 
-//Constantes Predefinidas
-//http://php.net/manual/es/language.constants.predefined.php
+/*Constantes predefinidas  
+http://php.net/manual/es/language.constants.predefined.php
+
+Constantes predefinidas del núcleo
+echo PHP_INT_MIN;
+http://php.net/manual/es/reserved.constants.php
+*/
+
+?>

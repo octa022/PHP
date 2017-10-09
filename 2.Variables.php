@@ -1,36 +1,46 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: octavio
- * Date: 13/08/17
- * Time: 02:43 PM
- */
 echo '<h1>Variables</h1> </br>';
 
 $integer=1;
 $float=1.5;
 $istrue=true;
-$arrayColors = array('Negro','Azul','ROjo');
+$arrayColores = array('Negro','Azul','Rojo');
 $string="Cadena";
 
-echo $integer;
-echo $float;
+echo $integer.'</br>';
+echo $float.'</br>';
 if ($istrue){
     echo 'Verdadero <br>';
 };
-echo $arrayColors[1];
+echo $arrayColores[1].'</br>';
 echo $string;
 
 // Variables Globales y Locales
 echo '<h2>Variables Globales</h2>';
 
 function variablesGlobales(){
-    $local='Variable Local';
+    $local='Variable Local'.'</br>';
     echo $GLOBALS['Global'];
-    echo $local;
+    echo $local;	
 }
-
-$Global='Escribiendo Variable Global';
+//Asignarle un valor a la variable Global
+$Global='Escribiendo Variable Global'.'</br>';
+// LLamamos la Funcion
 variablesGlobales();
 
-// Variables superglobals
+/* Variables superglobals
+
+    $GLOBALS
+    $_SERVER
+    $_GET
+    $_POST
+    $_FILES
+    $_COOKIE
+    $_SESSION
+    $_REQUEST
+    $_ENV
+
+http://php.net/manual/es/language.variables.superglobals.php
+
+*/
+?>
